@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 /**
- *
+ * https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem
  *
  * @author gwon
  * @history

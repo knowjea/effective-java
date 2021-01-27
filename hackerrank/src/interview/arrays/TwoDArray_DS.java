@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 /**
- *
+ * https://www.hackerrank.com/challenges/2d-array/problem
  *
  * @author gwon
  * @history

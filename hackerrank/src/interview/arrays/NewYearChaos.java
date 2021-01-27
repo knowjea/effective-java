@@ -3,7 +3,7 @@ package interview.arrays;
 import java.util.Scanner;
 
 /**
- *
+ * https://www.hackerrank.com/challenges/new-year-chaos/problem
  *
  * @author gwon
  * @history
