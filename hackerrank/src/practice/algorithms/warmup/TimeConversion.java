@@ -31,6 +31,5 @@ public class TimeConversion {
 		String s = scan.nextLine();
 
 		String result = timeConversion(s);
-
 	}
 }

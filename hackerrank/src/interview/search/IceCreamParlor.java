@@ -8,7 +8,7 @@ import java.util.Scanner;
 import java.util.TreeMap;
 
 /**
- * 비용이 다른 아이스크림 중 두 개를 선택해서 money를 모두 쓸 수 있는 아이스크림 출력
+ * 비용이 다른 아이스크림 중 두 개를 선택해서 money를 모두 쓸 수 있는 아이스크림 인덱스 출력
  * https://www.hackerrank.com/challenges/ctci-ice-cream-parlor/problem
  *
  * 코딩시간 : 35분
