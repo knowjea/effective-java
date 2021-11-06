@@ -24,6 +24,7 @@ public class Rule4 {
 //		private Collections collections = new Collections();
 
 //		UtilityClass utilityClass = new UtilityClass();
+
 	}
 
 }

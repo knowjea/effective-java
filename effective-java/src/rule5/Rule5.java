@@ -10,8 +10,14 @@ package rule5;
  */
 public class Rule5 {
 	public static void main(String[] args) {
-//		String str = new String("stringette");
-		String str = "stringette";
+		String newStr1 = new String("camel");
+		String newStr2 = new String("camel");
+
+		String literalStr1 = "camel";
+		String literalStr2 = "camel";
+
+		System.out.println(newStr1 == newStr2); // false
+		System.out.println(literalStr1 == literalStr2); // true
 
 //		Boolean bool = new Boolean(true);
 		Boolean bool = Boolean.valueOf(true);
