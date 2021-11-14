@@ -26,6 +26,6 @@ public class ExceptionInFinalizeTest {
 
 		super.finalize();
 
-		System.out.println("The finalize method end");
+		System.out.println("The finalize method end"); // not printed
 	}
 }

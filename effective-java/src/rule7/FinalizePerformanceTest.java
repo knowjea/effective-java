@@ -14,26 +14,17 @@ public class FinalizePerformanceTest {
 	 * TODO Implement performance test case for finalize
 	 */
 	public static void main(String[] args) {
-		long start = System.currentTimeMillis();
-		FinalizePerformanceTest finalizePerformanceTest = new FinalizePerformanceTest();
-		finalizePerformanceTest = null;
-
-		System.gc();
-
-		long end = System.currentTimeMillis();
-		System.out.println("time: " + (end - start) / 1000.0);
+		long start = System.nanoTime();
+		for (int i = 0; i < 1000000; i++) {
+			new FinalizePerformanceTest();
+		}
+		long end = System.nanoTime();
+		System.out.println("time: " + (end - start));
 
 	}
 
-	/*
-	 * (non-Javadoc)
-	 *
-	 * @see java.lang.Object#finalize()
-	 */
 	@Override
 	protected void finalize() throws Throwable {
-		System.out.println("test");
-		// TODO Auto-generated method stub
 		super.finalize();
 	}
 

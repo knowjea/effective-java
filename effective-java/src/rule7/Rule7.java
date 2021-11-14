@@ -1,5 +1,7 @@
 package rule7;
 
+import javax.swing.JFrame;
+
 /**
  * avoid finalizers
  * (종료자 사용을 피하라)
@@ -10,6 +12,10 @@ package rule7;
  */
 public class Rule7 {
 
-	public static void main(String[] args) throws Throwable {}
+	public static void main(String[] args) throws Throwable {
+		System.runFinalizersOnExit(true);
+		Runtime.runFinalizersOnExit(true);
+		new JFrame();
+	}
 
 }
