@@ -25,10 +25,12 @@ public class ColorPoint extends Point {
 
 	@Override
 	public boolean equals(Object obj) {
+		// Point 객체가 아닐 경우, 항상 false를 리턴
 		if (!(obj instanceof Point)) {
 			return false;
 		}
 
+		// ColorPoint가 아닌 Point 객체일경우, 색상은 비교하지 않고 좌표만 비교
 		if (!(obj instanceof ColorPoint)) {
 			return obj.equals(this);
 		}
@@ -38,18 +40,18 @@ public class ColorPoint extends Point {
 
 	public static void main(String[] args) {
 		Point point = new Point(1, 2);
-		ColorPoint colorPoint = new ColorPoint(point, Color.RED);
+		ColorPoint redColorPoint = new ColorPoint(point, Color.RED);
 
 		// Symmetry
-		System.out.println(point.equals(colorPoint)); // true
-		System.out.println(colorPoint.equals(point)); // true
+		System.out.println(point.equals(redColorPoint)); // true
+		System.out.println(redColorPoint.equals(point)); // true
 
 		ColorPoint blueColorPoint = new ColorPoint(point, Color.BLUE);
 
 		// Transitivity violation
-		System.out.println(colorPoint.equals(point)); // true
+		System.out.println(redColorPoint.equals(point)); // true
 		System.out.println(point.equals(blueColorPoint)); // true
-		System.out.println(colorPoint.equals(blueColorPoint)); // false
+		System.out.println(redColorPoint.equals(blueColorPoint)); // false
 	}
 
 }

@@ -15,16 +15,14 @@ import java.net.UnknownHostException;
 public class UrlEqulasTest {
 	public static void main(String[] args) throws MalformedURLException, UnknownHostException {
 		URL firstUrl = new URL("https://www.google.co.kr/");
-		URL secondUrl = new URL("https://www.google.co.kr/webhp?hl=ko&sa=X&ved=0ahUKEwiRiKyjtIrdAhUCUt4KHSe7C88QPAgD");
+		URL secondUrl = new URL("https://142.250.199.67/"); // 구글의 접속 IP는 다양하므로 테스트때마다 다름
 
-		System.out.println(firstUrl.getRef());
 		InetAddress address = InetAddress.getByName(firstUrl.getHost());
-		System.out.println(address.getHostAddress());
+		System.out.println(address.getHostAddress()); // 142.250.199.67
 
 		InetAddress address2 = InetAddress.getByName(secondUrl.getHost());
-		System.out.println(address2.getHostAddress());
-		System.out.println(firstUrl.getFile());
-		System.out.println(secondUrl.getFile());
-		System.out.println(firstUrl.equals(secondUrl));
+		System.out.println(address2.getHostAddress()); // 142.250.199.67
+
+		System.out.println(firstUrl.equals(secondUrl)); // true
 	}
 }

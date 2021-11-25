@@ -16,6 +16,7 @@ public class XClass {
 			return age == ((XClass) obj).age;
 		}
 
+		// X 클래스는 Y 클래스와도 비교를 한다.
 		if (obj instanceof YClass) {
 			return age == ((YClass) obj).years;
 		}

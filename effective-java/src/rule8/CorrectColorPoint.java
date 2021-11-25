@@ -11,6 +11,7 @@ import java.awt.Point;
  *          2018. 8. 26. initial creation
  */
 public class CorrectColorPoint {
+	// Point를 상속하지 않고 필드로 구성하였다.
 	private final Point point;
 	private final Color color;
 
