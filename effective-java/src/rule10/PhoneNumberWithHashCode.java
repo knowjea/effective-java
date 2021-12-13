@@ -18,6 +18,12 @@ public class PhoneNumberWithHashCode {
 		this.lineNumber = lineNumber;
 	}
 
+	/**
+	 *
+	 * 전화번호를 문자열로 변환해서 반환한다.
+	 * 문자열은 "(XXX) YYY-ZZZZ" 형식으로 표현하여, 지역번호(areaCode), 국번(prefix), 회선번호(lineNumber) 순이다.
+	 * 형식은 변경될 수 있다.
+	 */
 	@Override
 	public String toString() {
 		return String.format("(%03d) %03d-%04d", areaCode, prefix, lineNumber);
