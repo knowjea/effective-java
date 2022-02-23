@@ -7,11 +7,11 @@ package rule14;
  * @history
  *          2018. 9. 29. initial creation
  */
-public class PositivePointWithPrivateField {
-	private double x;
-	private double y;
+public class PositivePoinWithFinalField {
+	public final double x;
+	public final double y;
 
-	public PositivePointWithPrivateField(double x, double y) {
+	public PositivePoinWithFinalField(double x, double y) {
 		if (x < 0 || y < 0) {
 			throw new IllegalArgumentException();
 		}
@@ -19,5 +19,4 @@ public class PositivePointWithPrivateField {
 		this.x = x;
 		this.y = y;
 	}
-
 }
